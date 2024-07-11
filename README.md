@@ -2,6 +2,8 @@
 
 ## Get started
 
+Rename `.env.example` to `.env`. Optionally fill with real values to actually log in. Only `AUTH_SECRET` must be set for app to start.
+
 ```
 npm install
 npx prisma generate
