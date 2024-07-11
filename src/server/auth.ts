@@ -18,5 +18,6 @@ export const authOptions: SolidAuthConfig = {
       clientSecret: process.env.GITHUB_CLIENT_SECRET as string
     })
   ],
-  adapter: PrismaAdapter(prisma) as Adapter
+  adapter: PrismaAdapter(prisma) as Adapter,
+  basePath: "/api/auth"
 };
