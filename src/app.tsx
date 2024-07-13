@@ -19,6 +19,7 @@ export default function App() {
           <Title>SolidStart - Basic</Title>
           <a href="/">Index</a>
           <a href="/protected">Protected</a>
+          <a href="/test">Test</a>
           <Suspense>
             <SessionProvider>{props.children} </SessionProvider>
           </Suspense>
