@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <main>
-      <h1>Home</h1>
+      <h1>Home 🇸🇪</h1>
       <p>Session: {mySession()?.user?.name ?? "none"}</p>
       <Show
         when={session()}

@@ -6,7 +6,9 @@ import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { onMount, Suspense } from "solid-js";
 import "./app.css";
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 
+polyfillCountryFlagEmojis();
 
 export default function App() {
 
