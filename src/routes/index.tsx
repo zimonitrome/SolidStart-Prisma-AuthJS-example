@@ -1,9 +1,11 @@
 import { createSession, signIn } from "@solid-mediakit/auth/client";
 import { createAsync } from "@solidjs/router";
 import { Show } from "solid-js";
+import { ComponentA } from "~/components/componentA";
+import { ComponentB } from "~/components/componentB";
 import { getUserSession } from "~/server/helpers";
 
-const Home = () => {
+export default () => {
 
   const mySession = createAsync(() => getUserSession());
 
@@ -13,6 +15,8 @@ const Home = () => {
     <main>
       <h1>Home 🇸🇪</h1>
       <p>Session: {mySession()?.user?.name ?? "none"}</p>
+      <ComponentA />
+      <ComponentB />
       <Show
         when={session()}
         fallback={
@@ -28,5 +32,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;

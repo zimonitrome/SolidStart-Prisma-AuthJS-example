@@ -1,5 +1,6 @@
 body {
-  font-family: "Twemoji Country Flags", Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: "Twemoji Country Flags", Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: "Twemoji Country Flags", "Ubuntu";
 }
 
 main {

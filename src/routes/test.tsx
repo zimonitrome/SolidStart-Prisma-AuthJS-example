@@ -1,4 +1,5 @@
 import { createSession } from "@solid-mediakit/auth/client";
+import { ComponentB } from "~/components/componentB";
 
 const Test = () => {
   const session = createSession();
